@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>hgskhgdkjhgdkjgfh</title>
+</head>
+<body>
+    <h1> Animals</h1>
+
+    <table >
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>SPECIES</td>
+        </tr>
+        <tr th:each="animal : ${ani}">
+            <td th:text="${animal.id}"></td>
+            <td th:text="${animal.name}"></td>
+            <td th:text="${animal.species}"></td>
+        </tr>
+    </table>
+</body>
+</html>
